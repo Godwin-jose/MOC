@@ -1,0 +1,142 @@
+/* General Styles */
+.home {
+    font-family: 'Georgia', serif;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    padding: 100px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    margin-bottom: 30px;
+  }
+  
+  .hero button {
+    background-color: white;
+    color: #1e3a8a;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .services h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .services p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .service-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0 10px;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    color: #666;
+    padding: 0 20px 20px;
+  }
+  
+  /* Customer Trust Section */
+  .customer-trust {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 80px 20px;
+  }
+  
+  .customer-trust h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .customer-trust p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 40px;
+  }
+  
+  .trust-stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+  }
+  
+  .trust-stats h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .trust-stats p {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+  
+  /* Footer Section */
+  .footer {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
