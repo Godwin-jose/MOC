@@ -57,3 +57,77 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+
+/* Mechanic Login Page */
+.mechanic-login {
+  padding: 20px;
+  text-align: center;
+}
+
+.mechanic-login h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.mechanic-login form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.mechanic-login input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.mechanic-login button {
+  padding: 10px;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Mechanic Profile Page */
+.mechanic-profile {
+  padding: 20px;
+  text-align: center;
+}
+
+.mechanic-profile h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.mechanic-profile form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.mechanic-profile input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.mechanic-profile button {
+  padding: 10px;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.location-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
