@@ -28,6 +28,8 @@ const MechanicProfile = () => {
   const [pincode, setPincode] = useState("");
   const [images, setImages] = useState([]);
   const [mapVisible, setMapVisible] = useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   // Get current location
   const handleCurrentLocation = () => {
@@ -66,7 +68,11 @@ const MechanicProfile = () => {
       alert("Please set a valid shop location.");
       return;
     }
-    console.log({ name, shopName, location, pincode, images });
+    if (!email || !password) {
+      alert("Please provide an email and password for future logins.");
+      return;
+    }
+    console.log({ name, shopName, location, pincode, images, email, password });
     alert("Shop added successfully!");
   };
 
@@ -156,6 +162,28 @@ const MechanicProfile = () => {
             placeholder="Enter your pincode"
             value={pincode}
             onChange={(e) => setPincode(e.target.value)}
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label>Email</label>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label>Password</label>
+          <input
+            type="password"
+            placeholder="Set a password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
             required
           />
         </div>
